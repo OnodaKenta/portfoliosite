@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Onoda Kenta</title>
   </head>
 
   <body>
-    <header>
+
+    <header class=fixed-top>
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand text-white font-weight-bold" href="#">Onoda Kenta</a>
+          <a class="navbar-brand text-white font-weight-bold" href="#home">Onoda Kenta</a>
           <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,19 +29,19 @@
                 <a class="nav-link text-white" href="#home">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">PROFILE</a>
+                <a class="nav-link text-white" href="#profile">PROFILE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">SKILL</a>
+                <a class="nav-link text-white" href="#skill">SKILL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">PRODUCT</a>
+                <a class="nav-link text-white" href="#product">PRODUCT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">BLOG</a>
+                <a class="nav-link text-white" href="#inquiry">INQUIRY</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">INQUIRY</a>
+                <a class="nav-link text-white" href="https://blog.onodakenta.com/" target="_blank" rel=”noopener noreferrer”>BLOG</a>
               </li>
             </ul>
           </div>
@@ -48,19 +50,216 @@
     </header>
 
     <main>
-      <div class="bg-image min-vh-100 d-flex justify-content-center align-items-center" id="home">
+
+      <div class="bg-image py-5 d-flex justify-content-center align-items-center" id="home">
         <div class="container text-center">
             <h2>Onoda Kenta</h2>
             <p class="pb-4">Portfolio Site</p>
-            <a class="btn btn-primary px-4" href="#">View</a>
+            <a class="btn btn-primary px-4" href="#profile">View</a>
         </div>
       </div>
+
+      <div class="bg-light py-5 d-flex justify-content-center align-items-center" id="profile">
+        <div class="container">
+          <div class="text-center">
+            <h2>PROFILE</h2>
+            <p>プロフィール</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="text-center pb-4">
+                <img class="rounded-circle mw-100" src="img/picture.jpg">
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <ul>
+                  <li>名前:小野田健太(<a href="https://twitter.com/onoda_kenta" target="_blank" rel=”noopener noreferrer”>@onoda_kenta</a>)</li>
+                  <li>住居:東京都</li>
+                  <li>学歴:明治大学法学部卒業</li>
+                  <li>活動:未経験からweb系エンジニアを目指して独学で学習<br>現在転職活動中</li>
+                  <li>趣味:テキサスホールデムポーカー</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+              <div Class="text-center">
+                <a class="twitter-timeline" data-width="290" data-height="480" href="https://twitter.com/onoda_kenta?ref_src=twsrc%5Etfw">Tweets by onoda_kenta</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-5 d-flex justify-content-center align-items-center" id="skill">
+        <div class="container">
+          <h2 class="text-center">SKILL</h2>
+          <p class="text-center">スキル</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="px-4">
+                <h3 class="text-center py-4">フロントエンド</h3>
+                <table class="table">
+                  <thead>
+                    <tr class="row">
+                      <th class="col-6">技術</th>
+                      <th class="col-6">レベル</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row">
+                      <td class="col-6">HTML</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="1"></span></td>
+                    </tr>
+                    <tr class="row">
+                      <td class="col-6">CSS</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="1"></span></td>
+                    </tr>
+                    <tr class="row">
+                      <td class="col-6">JavaScript</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="1"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="px-4">
+                <h3 class="text-center py-4">バックエンド</h3>
+                <table class="table">
+                  <thead>
+                    <tr class="row">
+                      <th class="col-6">技術</th>
+                      <th class="col-6">レベル</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row">
+                      <td class="col-6">PHP</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="0.5"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="px-4">
+                <h3 class="text-center py-4">フレームワーク</h3>
+                <table class="table">
+                  <thead>
+                    <tr class="row">
+                      <th class="col-6">技術</th>
+                      <th class="col-6">レベル</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row">
+                      <td class="col-6">Bootstrap</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="1.5"></span></td>
+                    </tr>
+                    <tr class="row">
+                      <td class="col-6">jQuery</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="0.5"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="px-4">
+                <h3 class="text-center py-4">インフラ・その他</h3>
+                <table class="table">
+                  <thead>
+                    <tr class="row">
+                      <th class="col-6">技術</th>
+                      <th class="col-6">レベル</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row">
+                      <td class="col-6">Linux</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="1.5"></span></td>
+                    </tr>
+                    <tr class="row">
+                      <td class="col-6">Git</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="1"></span></td>
+                    </tr>
+                    <tr class="row">
+                      <td class="col-6">AWS</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="1"></span></td>
+                    </tr>
+                    <tr class="row">
+                      <td class="col-6">Docker</td>
+                      <td class="col-6"><span class="star5_rating" data-rate="0.5"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-light py-5 d-flex justify-content-center align-items-center" id="product">
+        <div class="container text-center">
+          <h2>PRODUCT</h2>
+          <p>制作物</p>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="border border-dark my-4 p-4">
+                <img class="w-100 pb-4" src="img/site.jpg">
+                <h3>ポートフォリオサイト</h3>
+                <p>HTML/CSS/Bootstrap/JavaScript</p>
+                <a href="#" target="_blank" rel=”noopener noreferrer”>GitHub</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="border border-dark my-4 p-4">
+                <a href="https://blog.onodakenta.com/" target="_blank" rel=”noopener noreferrer”><img class="w-100 pb-4" src="img/blog.jpg"></a>
+                <h3><a class="text-reset text-decoration-none" href="https://blog.onodakenta.com/" target="_blank" rel=”noopener noreferrer”>OK BLOG</a></h3>
+                <p>WordPress/PHP</p>
+                <a href="https://blog.onodakenta.com/" target="_blank" rel=”noopener noreferrer”>Go to blog</a>
+              </div>
+            </div>
+            <div div class="col-lg-4">
+              <div class="border border-dark my-4 p-4">
+                <img class="w-100 pb-4" src="img/comingsoon.jpg">
+                <h3>製作中</h3>
+                <p>-</p>
+                <a href="#" target="_blank" rel=”noopener noreferrer”>GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-5 d-flex justify-content-center align-items-center" id="inquiry">
+        <div class="container text-center">
+          <h2>INQUIRY</h2>
+          <p>お問い合わせ</p>
+          <p  class="my-4">最後までご覧いただきありがとうございます。このサイトや私に関して何かありましたらtwitterのDMかブログのお問い合わせページからお問い合わせ下さい。</p>
+          <div>
+            <a href="https://twitter.com/onoda_kenta" target="_blank" rel=”noopener noreferrer”><i class="fab fa-twitter-square text-primary rounded"></i></a>
+          </div>
+          <div  class="mb-4">
+            <a href="https://twitter.com/onoda_kenta" target="_blank" rel=”noopener noreferrer”>@onoda_kenta</a>
+          </div>
+          <a href="https://blog.onodakenta.com/inquiry/" target="_blank" rel=”noopener noreferrer”>お問い合わせ</a>
+        </div>
+      </div>
+
     </main>
 
+    <footer>
+      <div class="container py-3">
+        <p class="p-0 m-0 text-white text-center">© 2021 Onoda Kenta</p>
+      </div>
+    </footer>
+
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="js/smoothscroll.js"></script>
   </body>
 </html>
