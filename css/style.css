@@ -1,6 +1,7 @@
 body {
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-weight: 500;
+  padding-top: 56px;
 }
 
 header {
@@ -11,8 +12,68 @@ header {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+#home {
+  min-height: calc(100vh - 56px);
+}
+
 .bg-image {
   background-image: url(../img/home.jpg);
   background-size: cover;
   background-position: center center;
 }
+
+#profile {
+  min-height: calc(100vh - 56px);
+}
+
+#skill {
+  min-height: calc(100vh - 56px);
+}
+
+#product {
+  min-height: calc(100vh - 56px);
+}
+
+#inquiry {
+  min-height: calc(100vh - 112px);
+}
+
+.fa-twitter-square {
+  font-size: 4rem;
+}
+
+footer {
+  background-color: #04384c;
+}
+
+.star5_rating {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  color: #ccc;
+}
+
+.star5_rating:before, .star5_rating:after {
+  content: '★★★★★';
+}
+
+.star5_rating:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcf32;
+}
+
+.star5_rating[data-rate="5"]:after{ width: 100%; }
+.star5_rating[data-rate="4.5"]:after{ width: 90%; }
+.star5_rating[data-rate="4"]:after{ width: 80%; }
+.star5_rating[data-rate="3.5"]:after{ width: 70%; }
+.star5_rating[data-rate="3"]:after{ width: 60%; }
+.star5_rating[data-rate="2.5"]:after{ width: 50%; }
+.star5_rating[data-rate="2"]:after{ width: 40%; }
+.star5_rating[data-rate="1.5"]:after{ width: 30%; }
+.star5_rating[data-rate="1"]:after{ width: 20%; }
+.star5_rating[data-rate="0.5"]:after{ width: 10%; }
+.star5_rating[data-rate="0"]:after{ width: 0%; }
