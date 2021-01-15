@@ -39,7 +39,7 @@ header {
 }
 
 .fa-twitter-square {
-  font-size: 4rem;
+  font-size: calc(1.275rem + .3vw);
 }
 
 footer {
